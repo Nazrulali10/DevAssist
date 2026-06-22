@@ -18,9 +18,9 @@ const NewsCard = ({ article }: NewsCardProps) => {
         className="object-cover w-full"
       />
 
-      <div className="flex flex-col p-2 md:p-6 ">
+      <div className="flex flex-col p-3 md:p-6 ">
         <div className="flex flex-col gap-2">
-          <h1 className="font-semibold leading-tight md:text-base text-base">
+          <h1 className="font-semibold leading-tight md:text-base md:line-clamp-none line-clamp-3 text-base">
             {article.title}
           </h1>
           <p className="md:text-sm text-sm text-gray-600 line-clamp-4 md:line-clamp-none">
