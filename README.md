@@ -55,7 +55,7 @@ DevAssist is an AI assistant for developers built with Next.js + TypeScript. It 
 
 ```bash
 git clone https://github.com/Nazrulali10/DevAssist.git
-cd devassist
+cd DevAssist
 npm install
 npm run dev
 ```
