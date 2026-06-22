@@ -19,7 +19,7 @@ const NewsPage = async () => {
       <div className="flex flex-col items-center w-full md:w-[75%]">
         <div className="flex mt-10 items-center justify-center">
           <BackButton />
-          <h1 className="text-3xl font-bold ">Tech News</h1>
+          <h1 className="md:text-3xl text-2xl font-bold ">Tech News</h1>
         </div>
         {!res ? (
           <Loader />

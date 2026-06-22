@@ -20,10 +20,10 @@ const NewsCard = ({ article }: NewsCardProps) => {
 
       <div className="flex flex-col p-2 md:p-6 ">
         <div className="flex flex-col gap-2">
-          <h1 className="font-semibold leading-tight md:text-base text-sm">
+          <h1 className="font-semibold leading-tight md:text-base text-base">
             {article.title}
           </h1>
-          <p className="md:text-sm text-xs text-gray-600 line-clamp-4 md:line-clamp-none">
+          <p className="md:text-sm text-sm text-gray-600 line-clamp-4 md:line-clamp-none">
             {article.description}
           </p>
         </div>
