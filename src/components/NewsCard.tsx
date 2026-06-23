@@ -7,8 +7,9 @@ const NewsCard = ({ article }: NewsCardProps) => {
   return (
     <Link
       href={article.url}
-      className="flex flex-col w-44 md:w-80 rounded-xl shadow-md overflow-hidden hover:scale-105 duration-300"
+     
     >
+      <div  className="flex flex-col w-44 md:w-80 rounded-xl shadow-md overflow-hidden hover:scale-105 duration-300">
       <Image
         src={article.urlToImage}
         alt={article.title}
@@ -39,6 +40,7 @@ const NewsCard = ({ article }: NewsCardProps) => {
             {new Date(article.publishedAt).toLocaleDateString()}
           </div>
         </div>
+      </div>
       </div>
     </Link>
   );

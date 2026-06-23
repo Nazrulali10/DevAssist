@@ -22,7 +22,7 @@ const AssistantPage = () => {
     });
     setPrompt("");
     if (!res.ok) {
-      alert("Limit Exceeded");
+      alert("Due to free-tier limitations, AI features may occasionally be unavailable.Please try again later.");
       setLoading(false);
       return;
     }
@@ -56,7 +56,7 @@ const AssistantPage = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-4 overflow-y-auto px-2 md:px-24  h-118 mt-10 md:mt-6">
+        <div className="flex flex-col gap-4 overflow-y-auto px-3 md:px-24  h-244 mt-10 md:mt-6">
           {messages.map((mess, i) => (
             <div
               key={i}
@@ -71,7 +71,7 @@ const AssistantPage = () => {
           ))}
         </div>
 
-        <div className="flex justify-center gap-2 z-10  w-full h-40 py-5">
+        <div className="flex justify-center gap-2 z-10   w-full h-40 py-5">
           <input
             type="text"
             value={prompt}

@@ -1,4 +1,4 @@
-import { ai } from "@/lib/gemini";
+import { ResumeAI } from "@/lib/gemini";
 import { NextResponse } from "next/server";
 
 export async function POST(request: Request) {
@@ -38,12 +38,13 @@ Resume:
 
 ${resume}
 `;
-    const result = await ai.models.generateContent({
+    const result = await ResumeAI.models.generateContent({
       model: "gemini-2.5-flash",
       contents: promptText,
     });
     return NextResponse.json({ resume: result.text });
   } catch (error) {
     console.log(error);
+    return NextResponse.json({ error: "Server error " }, { status: 500 });
   }
 }

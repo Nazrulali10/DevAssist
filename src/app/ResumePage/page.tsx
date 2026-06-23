@@ -19,7 +19,7 @@ const ResumePage = () => {
     });
     setResumeText("");
     if (!res.ok) {
-      alert("Limit Exceeded");
+      alert("Due to free-tier limitations, AI features may occasionally be unavailable.Please try again later.");
       setLoading(false);
       return;
     }

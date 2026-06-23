@@ -1,4 +1,4 @@
-import { ai } from "@/lib/gemini";
+import { AssistantAI } from "@/lib/gemini";
 import { NextResponse } from "next/server";
 
 export async function POST(request: Request) {
@@ -17,7 +17,7 @@ Rules:
 User Question:
 ${prompt}
 `;
-    const response = await ai.models.generateContent({
+    const response = await AssistantAI.models.generateContent({
       model: "gemini-2.5-flash",
       contents: promptText,
     });
