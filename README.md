@@ -65,7 +65,8 @@ npm run dev
 Create a `.env.local` file and add:
 
 ```env
-GEMINI_API_KEY=your_gemini_api_key
+GEMINI_API_KEY1=your_gemini_api_key1
+GEMINI_API_KEY2=your_gemini_api_key2
 NEWS_API_KEY=your_news_api_key
 ```
 
