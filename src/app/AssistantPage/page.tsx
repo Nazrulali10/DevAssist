@@ -56,7 +56,7 @@ const AssistantPage = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-4 overflow-y-auto px-3 md:px-24  h-244 mt-10 md:mt-6">
+        <div className="flex flex-col gap-4 overflow-y-auto px-3 md:px-24  h-232 mt-10 md:mt-6">
           {messages.map((mess, i) => (
             <div
               key={i}
